@@ -12,8 +12,10 @@
     <?php foreach ($dischi as $disco) { ?>
       <img src="<?php echo $disco['poster']; ?>" alt="cover">
       <h3><?php echo $disco['title']; ?></h3>
-
-    <?php  } ?>
+      <span><?php echo $disco['author']; ?></span>
+      <span><?php echo $disco['year']; ?></span>
+      <span><?php echo $disco['genre']; ?></span>
+    <?php } ?>
     </div>
 
     <script src="src/app.js" charset="utf-8"></script>
