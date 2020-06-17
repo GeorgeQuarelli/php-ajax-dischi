@@ -17,7 +17,10 @@
       <div class="card_container">
           <?php foreach ($dischi as $disco) { ?>
             <div class="card">
-              <div class=""><img src="<?php echo $disco['poster']; ?>" alt="cover"></div>
+              <div class="cover">
+                <img class="cover" src="<?php echo $disco['poster']; ?>" alt="cover">
+                <img class="play" src="img/play.png" alt="play">
+              </div>
               <div class="description">
                 <h3><?php echo $disco['title']; ?></h3>
                 <p class="author"><?php echo $disco['author']; ?></p>

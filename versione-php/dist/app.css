@@ -46,11 +46,25 @@ header img {
   background: #282828;
   text-align: center;
   border-radius: 8px;
+  position: relative;
 }
 
 .card img {
   max-width: 100%;
   border-radius: 10px;
+}
+
+.card .cover:hover img {
+  -webkit-filter: brightness(20%);
+          filter: brightness(20%);
+}
+
+.card .cover:hover img.play {
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+  display: block;
+  margin-top: -130px;
+  margin-left: 30px;
 }
 
 .card h3 {
@@ -71,5 +85,11 @@ header img {
 
 .card p.genre {
   color: #1ed760;
+}
+
+.card img.play {
+  display: none;
+  position: absolute;
+  height: 100px;
 }
 

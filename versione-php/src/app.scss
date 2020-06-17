@@ -49,9 +49,22 @@ header {
   background: #282828;
   text-align: center;
   border-radius: 8px;
+  position: relative;
+
     img {
       max-width: 100%;
       border-radius: 10px;
+    }
+    .cover {
+      &:hover img{
+        filter: brightness(20%);
+      }
+      &:hover img.play {
+        filter: brightness(100%);
+        display: block;
+        margin-top: -130px;
+        margin-left: 30px;
+      }
     }
     h3 {
         margin: 10px 0;
@@ -68,5 +81,10 @@ header {
     }
     p.genre {
         color: $colore_genere;
+    }
+    img.play {
+      display: none;
+      position: absolute;
+      height: 100px;
     }
 }
