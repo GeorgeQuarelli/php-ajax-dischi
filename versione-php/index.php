@@ -15,15 +15,17 @@
 
     <main>
       <div class="card_container">
-        <div class="card">
           <?php foreach ($dischi as $disco) { ?>
-            <img src="<?php echo $disco['poster']; ?>" alt="cover">
-            <h3><?php echo $disco['title']; ?></h3>
-            <p class="author"><?php echo $disco['author']; ?></p>
-            <p class="year"><?php echo $disco['year']; ?></p>
-            <p class="genre"><?php echo $disco['genre']; ?></p>
+            <div class="card">
+              <div class=""><img src="<?php echo $disco['poster']; ?>" alt="cover"></div>
+              <div class="description">
+                <h3><?php echo $disco['title']; ?></h3>
+                <p class="author"><?php echo $disco['author']; ?></p>
+                <p class="year"><?php echo $disco['year']; ?></p>
+                <p class="genre"><?php echo $disco['genre']; ?></p>
+              </div>
+            </div>
           <?php } ?>
-        </div>
       </div>
     </main>
 
