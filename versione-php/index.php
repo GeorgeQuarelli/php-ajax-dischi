@@ -7,14 +7,21 @@
     <link rel="stylesheet" href="dist/app.css">
   </head>
   <body>
+
     <header>
+      <div class="main-left">
+
+      </div>
       <div class="container">
-          <img src="img/logo.png" alt="logo" />
+
       </div>
     </header>
 
     <main>
-      <div class="card_container">
+      <div class="main-top container">
+
+      </div>
+      <div class="card_container container">
           <?php foreach ($dischi as $disco) { ?>
             <div class="card">
               <div class="cover">
@@ -31,6 +38,10 @@
           <?php } ?>
       </div>
     </main>
+
+    <footer>
+
+    </footer>
 
     <script src="src/app.js" charset="utf-8"></script>
   </body>
