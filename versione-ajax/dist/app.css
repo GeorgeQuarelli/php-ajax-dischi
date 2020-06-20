@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #258682;
+  background: linear-gradient(171deg, #258682 0%, #1c6b82 35%, #153362 65%, #040a1b 100%);
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  margin-top: -17px;
+}
+
+.main-left {
+  height: 851px;
+  width: 350px;
+  background-color: #071022;
+  float: left;
+}
+
+.main-top {
+  padding-top: 26px;
+}
+
+.main-top .menu-top {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.main-top .menu-top ul {
+  list-style: none;
+}
+
+.main-top .menu-top li {
+  float: left;
+  padding-left: 40px;
+}
+
+.container {
+  width: 1400px;
+  margin: auto;
+}
+
+.card_container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  padding-bottom: 37px;
+}
+
+.card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: 200px;
+  padding: 10px;
+  margin: 10px 20px;
+  padding-bottom: 20px;
+  background: rgba(40, 40, 40, 0.5);
+  border-radius: 8px;
+  position: relative;
+}
+
+.card img {
+  max-height: 200px;
+  max-width: 200px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card .cover:hover img {
+  -webkit-filter: brightness(20%);
+          filter: brightness(20%);
+}
+
+.card .cover:hover img.play {
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+  display: block;
+  margin-top: -150px;
+  margin-left: 50px;
+}
+
+.card h3 {
+  padding-top: 15px;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.card p.author {
+  padding-top: 5px;
+  color: #a1a1a1;
+  font-size: 15px;
+}
+
+.card p.year {
+  padding-top: 5px;
+  font-size: 15px;
+  color: #a1a1a1;
+}
+
+.card p.genre {
+  padding-top: 8px;
+  color: #34d6d0;
+}
+
+.card img.play {
+  display: none;
+  position: absolute;
+  height: 100px;
+}
+
+.card .description {
+  width: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer {
+  height: 100px;
+  background-color: #071022;
+}
+

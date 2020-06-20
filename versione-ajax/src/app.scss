@@ -1,0 +1,133 @@
+$colore_sfondo: #121212;
+$colore_p: #a1a1a1;
+$colore_genere: #34d6d0;
+$colore_scuro: #071022;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: rgb(37,134,130);
+  background: linear-gradient(171deg, rgba(37,134,130,1) 0%, rgba(28,107,130,1) 35%, rgba(21,51,98,1) 65%, rgba(4,10,27,1) 100%);
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  margin-top: -17px;
+  // background-color: rgba(40,40,40,0.3);
+}
+
+.main-left {
+  height: 851px;
+  width: 350px;
+  background-color: $colore_scuro;
+  float: left;
+}
+
+.main-top {
+  padding-top: 26px;
+  .menu-top {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: rgba(255,255,255,0.6);
+    cursor: pointer;
+      ul {
+        list-style: none;
+      }
+      li {
+        float: left;
+        padding-left: 40px;
+      }
+  }
+}
+
+
+.container {
+  width: 1400px;
+  margin: auto;
+}
+
+.card_container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  padding-bottom: 37px;
+}
+
+.card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: 200px;
+  padding: 10px;
+  margin: 10px 20px;
+  padding-bottom: 20px;
+  background: rgba(40,40,40,0.5);
+  // text-align: center;
+  border-radius: 8px;
+  position: relative;
+
+    img {
+      max-height: 200px;
+      max-width: 200px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .cover {
+      &:hover img{
+        filter: brightness(20%);
+      }
+      &:hover img.play {
+        filter: brightness(100%);
+        display: block;
+        margin-top: -150px;
+        margin-left: 50px;
+      }
+    }
+    h3 {
+        padding-top: 15px;
+        color: white;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    p.author {
+      padding-top: 5px;
+      color: #a1a1a1;
+      font-size: 15px;
+    }
+    p.year {
+      padding-top: 5px;
+      font-size: 15px;
+      color: $colore_p;
+    }
+    p.genre {
+      padding-top: 8px;
+      color: $colore_genere;
+    }
+    img.play {
+      display: none;
+      position: absolute;
+      height: 100px;
+    }
+    .description {
+      width: 190px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+}
+
+footer {
+  height: 100px;
+  background-color: $colore_scuro;
+}

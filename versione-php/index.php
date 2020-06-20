@@ -9,18 +9,26 @@
   <body>
 
     <header>
-      <div class="main-left">
+      <aside class="main-left">
 
-      </div>
-      <div class="container">
+      </aside>
 
-      </div>
+      <div class="main-top container">
+        <div class="menu-top">
+          <ul>
+            <li>Discover</li>
+            <li>Browse</li>
+            <li>Stream</li>
+            <li>Charts</li>
+            <li>Shop</li>
+            <li>News</li>
+            <li>Purchase</li>
+          </ul>
+        </div>
     </header>
 
     <main>
-      <div class="main-top container">
-
-      </div>
+      
       <div class="card_container container">
           <?php foreach ($dischi as $disco) { ?>
             <div class="card">
